@@ -1,0 +1,198 @@
+* [33ma4f96a9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m your message
+[31m|[m *   [33m8ed7339[m[33m ([m[1;31mold-origin/main[m[33m, [m[1;31mold-origin/HEAD[m[33m)[m Merge pull request #34 from rt-uae-dev/codex/refactor-to-use-per-task-temp-directories
+[31m|[m [32m|[m[33m\[m  
+[31m|[m [32m|[m * [33m6731643[m[33m ([m[1;31mold-origin/codex/refactor-to-use-per-task-temp-directories[m[33m)[m Fix Document AI confidence, attestation page handling, and salary extraction
+[31m|[m * [33m|[m [33m11448d3[m Merge pull request #32 from rt-uae-dev/codex/refactor-to-use-per-task-temp-directories
+[31m|[m [34m|[m[33m\[m[33m|[m 
+[31m|[m [34m|[m *   [33m4034c98[m Merge branch 'main' into codex/refactor-to-use-per-task-temp-directories
+[31m|[m [34m|[m [36m|[m[34m\[m  
+[31m|[m [34m|[m [36m|[m[34m/[m  
+[31m|[m [34m|[m[34m/[m[36m|[m   
+[31m|[m * [36m|[m   [33mec1adeb[m Merge pull request #33 from rt-uae-dev/codex/add-threading.lock-for-model-access
+[31m|[m [1;32m|[m[1;33m\[m [36m\[m  
+[31m|[m [1;32m|[m * [36m|[m [33m6903b86[m[33m ([m[1;31mold-origin/codex/add-threading.lock-for-model-access[m[33m)[m feat: guard ResNet model init with thread lock
+[31m|[m * [1;33m|[m [36m|[m   [33m7fe94f6[m Merge pull request #31 from rt-uae-dev/codex/refactor-threading-and-ui-updates-in-gui_app
+[31m|[m [1;33m|[m[1;35m\[m [1;33m\[m [36m\[m  
+[31m|[m [1;33m|[m [1;35m|[m[1;33m/[m [36m/[m  
+[31m|[m [1;33m|[m[1;33m/[m[1;35m|[m [36m|[m   
+[31m|[m [1;33m|[m * [36m|[m [33m01f006a[m[33m ([m[1;31mold-origin/codex/refactor-threading-and-ui-updates-in-gui_app[m[33m)[m Use queue for thread-safe UI updates
+[31m|[m [1;33m|[m[1;33m/[m [36m/[m  
+[31m|[m [1;33m|[m * [33ma363283[m Restore pipeline code and use per-run temp dirs
+[31m|[m [1;33m|[m * [33mdc6130c[m Use per-task temp directories
+[31m|[m [1;33m|[m[1;33m/[m  
+[31m|[m *   [33m3359311[m Merge pull request #30 from rt-uae-dev/phaycr-codex/create-logging-configuration-module-and-replace-prints
+[31m|[m [1;36m|[m[31m\[m  
+[31m|[m [1;36m|[m *   [33mabe90aa[m[33m ([m[1;31mold-origin/phaycr-codex/create-logging-configuration-module-and-replace-prints[m[33m)[m Merge branch 'main' into phaycr-codex/create-logging-configuration-module-and-replace-prints
+[31m|[m [1;36m|[m [32m|[m[1;36m\[m  
+[31m|[m [1;36m|[m [32m|[m[1;36m/[m  
+[31m|[m [1;36m|[m[1;36m/[m[32m|[m   
+[31m|[m * [32m|[m   [33mbe86b69[m Merge pull request #29 from rt-uae-dev/codex/refactor-exception-handling-and-messaging
+[31m|[m [34m|[m[35m\[m [32m\[m  
+[31m|[m [34m|[m * [32m\[m   [33mc0c7cae[m[33m ([m[1;31mold-origin/codex/refactor-exception-handling-and-messaging[m[33m)[m Merge branch 'main' into codex/refactor-exception-handling-and-messaging
+[31m|[m [34m|[m [36m|[m[34m\[m [32m\[m  
+[31m|[m [34m|[m [36m|[m[34m/[m [32m/[m  
+[31m|[m [34m|[m[34m/[m[36m|[m [32m|[m   
+[31m|[m * [36m|[m [32m|[m   [33m0b8dd41[m Merge pull request #27 from rt-uae-dev/codex/add-docstrings-and-type-hints-to-code
+[31m|[m [1;32m|[m[1;33m\[m [36m\[m [32m\[m  
+[31m|[m [1;32m|[m * [36m|[m [32m|[m [33med19227[m[33m ([m[1;31mold-origin/codex/add-docstrings-and-type-hints-to-code[m[33m)[m docs: expand GUI annotations and module docs
+[31m|[m [1;32m|[m * [36m|[m [32m|[m [33mced4a6e[m Add type hints and docstrings
+[31m|[m * [1;33m|[m [36m|[m [32m|[m   [33m74c0023[m Merge pull request #17 from rt-uae-dev/codex/explain-program-functionality
+[31m|[m [1;34m|[m[1;35m\[m [1;33m\[m [36m\[m [32m\[m  
+[31m|[m [1;34m|[m * [1;33m\[m [36m\[m [32m\[m   [33m33ca418[m[33m ([m[1;31mold-origin/codex/explain-program-functionality[m[33m)[m Merge branch 'main' into codex/explain-program-functionality
+[31m|[m [1;34m|[m [1;36m|[m[1;34m\[m [1;33m\[m [36m\[m [32m\[m  
+[31m|[m [1;34m|[m [1;36m|[m[1;34m/[m [1;33m/[m [36m/[m [32m/[m  
+[31m|[m [1;34m|[m[1;34m/[m[1;36m|[m [1;33m|[m [36m|[m [32m|[m   
+[31m|[m * [1;36m|[m [1;33m|[m [36m|[m [32m|[m   [33m665efec[m Merge pull request #15 from rt-uae-dev/codex/create-gui-for-pipeline-processing
+[31m|[m [32m|[m[33m\[m [1;36m\[m [1;33m\[m [36m\[m [32m\[m  
+[31m|[m [32m|[m * [1;36m\[m [1;33m\[m [36m\[m [32m\[m   [33m62ef341[m[33m ([m[1;31mold-origin/codex/create-gui-for-pipeline-processing[m[33m)[m Merge branch 'main' into codex/create-gui-for-pipeline-processing
+[31m|[m [32m|[m [34m|[m[32m\[m [1;36m\[m [1;33m\[m [36m\[m [32m\[m  
+[31m|[m [32m|[m [34m|[m[32m/[m [1;36m/[m [1;33m/[m [36m/[m [32m/[m  
+[31m|[m [32m|[m[32m/[m[34m|[m [1;36m|[m [1;33m|[m [36m|[m [32m|[m   
+[31m|[m * [34m|[m [1;36m|[m [1;33m|[m [36m|[m [32m|[m   [33m2d7fcc5[m Merge pull request #28 from rt-uae-dev/codex/identify-utility-functions-and-write-tests
+[31m|[m [36m|[m[1;31m\[m [34m\[m [1;36m\[m [1;33m\[m [36m\[m [32m\[m  
+[31m|[m [36m|[m * [34m|[m [1;36m|[m [1;33m|[m [36m|[m [32m|[m [33m60d4cfb[m[33m ([m[1;31mold-origin/codex/identify-utility-functions-and-write-tests[m[33m)[m test: add offline unit tests for utility functions
+[31m|[m [36m|[m [1;33m|[m [34m|[m[1;33m_[m[1;36m|[m[1;33m/[m [36m/[m [32m/[m  
+[31m|[m [36m|[m [1;33m|[m[1;33m/[m[34m|[m [1;36m|[m [36m|[m [32m|[m   
+[31m|[m * [1;33m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   [33mdb1da49[m Merge pull request #26 from rt-uae-dev/codex/refactor-model-initialization-in-resnet18_classifier
+[31m|[m [1;32m|[m[1;33m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m  
+[31m|[m [1;32m|[m * [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m   [33m0c8be2b[m[33m ([m[1;31mold-origin/codex/refactor-model-initialization-in-resnet18_classifier[m[33m)[m Merge branch 'main' into codex/refactor-model-initialization-in-resnet18_classifier
+[31m|[m [1;32m|[m [1;34m|[m[1;32m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m  
+[31m|[m [1;32m|[m [1;34m|[m[1;32m/[m [1;33m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [1;32m|[m[1;32m/[m[1;34m|[m [1;33m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   
+[31m|[m * [1;34m|[m [1;33m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   [33m39f30e4[m Merge pull request #25 from rt-uae-dev/codex/create-src/config.py-for-configurations
+[31m|[m [1;36m|[m[31m\[m [1;34m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m  
+[31m|[m [1;36m|[m * [1;34m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m   [33me4035f7[m[33m ([m[1;31mold-origin/codex/create-src/config.py-for-configurations[m[33m)[m Merge branch 'main' into codex/create-src/config.py-for-configurations
+[31m|[m [1;36m|[m [32m|[m[1;36m\[m [1;34m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m  
+[31m|[m [1;36m|[m [32m|[m[1;36m/[m [1;34m/[m [1;33m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [1;36m|[m[1;36m/[m[32m|[m [1;34m|[m [1;33m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   
+[31m|[m * [32m|[m [1;34m|[m [1;33m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   [33m8bc8a3c[m Merge pull request #24 from rt-uae-dev/codex/add-package-structure-and-editable-install
+[31m|[m [34m|[m[35m\[m [32m\[m [1;34m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m  
+[31m|[m [34m|[m * [32m\[m [1;34m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m   [33ma030ff5[m[33m ([m[1;31mold-origin/codex/add-package-structure-and-editable-install[m[33m)[m Merge branch 'main' into codex/add-package-structure-and-editable-install
+[31m|[m [34m|[m [36m|[m[34m\[m [32m\[m [1;34m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m  
+[31m|[m [34m|[m [36m|[m[34m/[m [32m/[m [1;34m/[m [1;33m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [34m|[m[34m/[m[36m|[m [32m|[m [1;34m|[m [1;33m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   
+[31m|[m * [36m|[m [32m|[m [1;34m|[m [1;33m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   [33mfcd691e[m Merge pull request #22 from rt-uae-dev/codex/refactor-main_pipeline.py-into-functions
+[31m|[m [1;33m|[m[1;33m\[m [36m\[m [32m\[m [1;34m\[m [1;33m\[m [34m\[m [1;36m\[m [36m\[m [32m\[m  
+[31m|[m [1;33m|[m [1;33m|[m[1;33m_[m[36m|[m[1;33m_[m[32m|[m[1;33m_[m[1;34m|[m[1;33m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [1;33m|[m[1;33m/[m[1;33m|[m [36m|[m [32m|[m [1;34m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m   
+[31m|[m [1;33m|[m * [36m|[m [32m|[m [1;34m|[m [34m|[m [1;36m|[m [36m|[m [32m|[m [33mb2f7756[m[33m ([m[1;31mold-origin/codex/refactor-main_pipeline.py-into-functions[m[33m)[m Refactor main pipeline into modular steps
+[31m|[m [1;33m|[m[1;33m/[m [36m/[m [32m/[m [1;34m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [1;33m|[m * [32m/[m [1;34m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m [33me8d87dc[m feat: add package metadata
+[31m|[m [1;33m|[m[1;33m/[m [32m/[m [1;34m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [1;33m|[m * [1;34m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m [33m6c91708[m feat: centralize configuration
+[31m|[m [1;33m|[m[1;33m/[m [1;34m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [1;33m|[m * [34m/[m [1;36m/[m [36m/[m [32m/[m [33m491329e[m Refactor ResNet model loading
+[31m|[m [1;33m|[m[1;33m/[m [34m/[m [1;36m/[m [36m/[m [32m/[m  
+[31m|[m [1;33m|[m * [1;36m|[m [36m|[m [32m|[m [33m7f2a140[m Add GUI for full and manual document processing
+[31m|[m [1;33m|[m [1;33m|[m * [36m|[m [32m|[m [33m8fec4bd[m Run OCR on cropped attestation labels while keeping full page
+[31m|[m [1;33m|[m [1;33m|[m[1;33m/[m [36m/[m [32m/[m  
+[31m|[m [1;33m|[m [1;33m|[m * [32m|[m [33me18f3ab[m refactor: raise specific processing errors
+[31m|[m [1;33m|[m [1;33m|[m * [32m|[m [33mc834d8d[m Refine exception handling and user feedback
+[31m|[m [1;33m|[m [1;33m|[m[1;33m/[m [32m/[m  
+[31m|[m [1;33m|[m[1;33m/[m[1;33m|[m [32m|[m   
+[31m|[m [1;33m|[m [1;33m|[m * [33mc544a00[m Fix orientation detector fallback and add test fixture
+[31m|[m [1;33m|[m [1;33m|[m * [33mc720720[m Add global test config with logging and stubs
+[31m|[m [1;33m|[m [1;33m|[m[1;33m/[m  
+[31m|[m [1;33m|[m[1;33m/[m[1;33m|[m   
+[31m|[m [1;33m|[m [1;33m|[m * [33m0c852fd[m[33m ([m[1;31mold-origin/codex/create-logging-configuration-module-and-replace-prints[m[33m)[m feat: configure root logger
+[31m|[m [1;33m|[m [1;33m|[m[1;33m/[m  
+[31m|[m [1;33m|[m[1;33m/[m[1;33m|[m   
+[31m|[m * [1;33m|[m   [33m8ec26d9[m Merge pull request #21 from rt-uae-dev/codex/refactor-imports-in-output_saving_utils
+[31m|[m [1;35m|[m[1;36m\[m [1;33m\[m  
+[31m|[m [1;35m|[m * [1;33m|[m [33md0e07c9[m[33m ([m[1;31mold-origin/codex/refactor-imports-in-output_saving_utils[m[33m)[m chore: streamline output utils imports
+[31m|[m * [1;36m|[m [1;33m|[m   [33m2327eb6[m Merge pull request #20 from rt-uae-dev/codex/refactor-pdf-conversion-in-main_pipeline
+[31m|[m [31m|[m[32m\[m [1;36m\[m [1;33m\[m  
+[31m|[m [31m|[m * [1;36m|[m [1;33m|[m [33md6af021[m[33m ([m[1;31mold-origin/codex/refactor-pdf-conversion-in-main_pipeline[m[33m)[m refactor: remove redundant PDF conversion
+[31m|[m [31m|[m [1;36m|[m[1;36m/[m [1;33m/[m  
+[31m|[m * [1;36m|[m [1;33m|[m   [33m8e4b916[m Merge pull request #19 from rt-uae-dev/codex/add-pymupdf-to-requirements.txt
+[31m|[m [1;36m|[m[34m\[m [1;36m\[m [1;33m\[m  
+[31m|[m [1;36m|[m [34m|[m[1;36m/[m [1;33m/[m  
+[31m|[m [1;36m|[m[1;36m/[m[34m|[m [1;33m|[m   
+[31m|[m [1;36m|[m * [1;33m|[m [33meeb2582[m[33m ([m[1;31mold-origin/codex/add-pymupdf-to-requirements.txt[m[33m)[m Add PyMuPDF dependency
+[31m|[m [1;36m|[m[1;36m/[m [1;33m/[m  
+[31m|[m * [1;33m|[m   [33mb2e5f7e[m Merge pull request #18 from rt-uae-dev/x1a1c1-codex/explain-program-functionality
+[31m|[m [35m|[m[36m\[m [1;33m\[m  
+[31m|[m [35m|[m * [1;33m|[m [33m6668652[m[33m ([m[1;31mold-origin/x1a1c1-codex/explain-program-functionality[m[33m)[m Run OCR on cropped attestation labels while keeping full page
+[31m|[m [35m|[m [1;33m|[m[1;33m/[m  
+[31m|[m * [1;33m|[m   [33m4d9f856[m Merge pull request #16 from rt-uae-dev/c9rm64-codex/create-gui-for-pipeline-processing
+[31m|[m [1;31m|[m[1;32m\[m [1;33m\[m  
+[31m|[m [1;31m|[m * [1;33m|[m [33m30ba7ae[m[33m ([m[1;31mold-origin/c9rm64-codex/create-gui-for-pipeline-processing[m[33m)[m Add GUI for full and manual document processing
+[31m|[m [1;31m|[m [1;33m|[m[1;33m/[m  
+[31m|[m * [1;33m|[m   [33m218aae9[m Merge pull request #14 from rt-uae-dev/codex/update-imap-parser-to-extract-sender-email
+[31m|[m [1;33m|[m[1;34m\[m [1;33m\[m  
+[31m|[m [1;33m|[m * [1;33m|[m [33md784331[m[33m ([m[1;31mold-origin/codex/update-imap-parser-to-extract-sender-email[m[33m)[m Capture sender email and include in output
+[31m|[m [1;33m|[m [1;33m|[m[1;33m/[m  
+[31m|[m * [1;33m|[m   [33mcaffc9e[m Merge pull request #13 from rt-uae-dev/codex/add-check-for-already-processed-folders
+[31m|[m [1;33m|[m[1;36m\[m [1;33m\[m  
+[31m|[m [1;33m|[m [1;36m|[m[1;33m/[m  
+[31m|[m [1;33m|[m[1;33m/[m[1;36m|[m   
+[31m|[m [1;33m|[m * [33m8909241[m[33m ([m[1;31mold-origin/codex/add-check-for-already-processed-folders[m[33m)[m skip already processed folders
+[31m|[m [1;33m|[m[1;33m/[m  
+[31m|[m *   [33m1f8dd5e[m Merge pull request #12 from rt-uae-dev/codex/modify-image-compression-in-pipeline
+[31m|[m [31m|[m[32m\[m  
+[31m|[m [31m|[m * [33md1cfbe3[m[33m ([m[1;31mold-origin/codex/modify-image-compression-in-pipeline[m[33m)[m Keep attestation pages uncompressed until final output
+[31m|[m [31m|[m[31m/[m  
+[31m|[m *   [33m6b5fd6e[m Merge pull request #11 from rt-uae-dev/codex/add-google-vision-as-ocr-fallback
+[31m|[m [33m|[m[34m\[m  
+[31m|[m [33m|[m * [33m2397099[m[33m ([m[1;31mold-origin/codex/add-google-vision-as-ocr-fallback[m[33m)[m Fallback to Google Vision when Document AI confidence low
+[31m|[m * [34m|[m   [33mf8d7574[m Merge pull request #10 from rt-uae-dev/codex/de-duplicate-dependencies-and-remove-specified-ones
+[31m|[m [35m|[m[36m\[m [34m\[m  
+[31m|[m [35m|[m * [34m\[m   [33m44d45a9[m[33m ([m[1;31mold-origin/codex/de-duplicate-dependencies-and-remove-specified-ones[m[33m)[m Merge branch 'main' into codex/de-duplicate-dependencies-and-remove-specified-ones
+[31m|[m [35m|[m [1;31m|[m[35m\[m [34m\[m  
+[31m|[m [35m|[m [1;31m|[m[35m/[m [34m/[m  
+[31m|[m [35m|[m[35m/[m[1;31m|[m [34m|[m   
+[31m|[m * [1;31m|[m [34m|[m   [33md852ca1[m Merge pull request #9 from rt-uae-dev/codex/remove-easyocr-from-requirements-and-tests
+[31m|[m [1;33m|[m[1;34m\[m [1;31m\[m [34m\[m  
+[31m|[m [1;33m|[m * [1;31m|[m [34m|[m [33med5e0dd[m[33m ([m[1;31mold-origin/codex/remove-easyocr-from-requirements-and-tests[m[33m)[m Remove EasyOCR references
+[31m|[m [1;33m|[m [34m|[m [1;31m|[m[34m/[m  
+[31m|[m [1;33m|[m [34m|[m[34m/[m[1;31m|[m   
+[31m|[m * [34m|[m [1;31m|[m   [33m60f9f8a[m Merge pull request #8 from rt-uae-dev/codex/remove-pytesseract-and-update-ocr-logic
+[31m|[m [1;35m|[m[1;36m\[m [34m\[m [1;31m\[m  
+[31m|[m [1;35m|[m * [34m|[m [1;31m|[m [33m7057b34[m[33m ([m[1;31mold-origin/codex/remove-pytesseract-and-update-ocr-logic[m[33m)[m feat: drop tesseract in favor of google ocr
+[31m|[m [1;35m|[m [34m|[m[34m/[m [1;31m/[m  
+[31m|[m * [34m|[m [1;31m|[m   [33mc643e8c[m Merge pull request #7 from rt-uae-dev/codex/add-support-for-new-environment-variables
+[31m|[m [34m|[m[32m\[m [34m\[m [1;31m\[m  
+[31m|[m [34m|[m [32m|[m[34m/[m [1;31m/[m  
+[31m|[m [34m|[m[34m/[m[32m|[m [1;31m|[m   
+[31m|[m [34m|[m * [1;31m|[m [33m07cddf0[m[33m ([m[1;31mold-origin/codex/add-support-for-new-environment-variables[m[33m)[m docs: expand env config
+[31m|[m [34m|[m [32m|[m * [33mbe89853[m refactor: streamline requirements
+[31m|[m [34m|[m [32m|[m[34m/[m  
+[31m|[m [34m|[m[34m/[m[32m|[m   
+[31m|[m * [32m|[m   [33m123630c[m Merge pull request #6 from rt-uae-dev/codex/add-service-detail-to-final-txt-file
+[31m|[m [32m|[m[34m\[m [32m\[m  
+[31m|[m [32m|[m [34m|[m[32m/[m  
+[31m|[m [32m|[m[32m/[m[34m|[m   
+[31m|[m [32m|[m *   [33m3303361[m[33m ([m[1;31mold-origin/codex/add-service-detail-to-final-txt-file[m[33m)[m Merge branch 'main' into codex/add-service-detail-to-final-txt-file
+[31m|[m [32m|[m [35m|[m[32m\[m  
+[31m|[m [32m|[m [35m|[m[32m/[m  
+[31m|[m [32m|[m[32m/[m[35m|[m   
+[31m|[m * [35m|[m   [33m2a6d966[m Merge pull request #5 from rt-uae-dev/codex/optimize-attestation-page-processing
+[31m|[m [1;31m|[m[1;32m\[m [35m\[m  
+[31m|[m [1;31m|[m * [35m|[m [33mc66e0a3[m[33m ([m[1;31mold-origin/codex/optimize-attestation-page-processing[m[33m)[m Save full attestation page and use Document AI only
+[31m|[m [1;31m|[m[31m/[m [35m/[m  
+[31m|[m[31m/[m[1;31m|[m [35m|[m   
+[31m|[m * [35m|[m   [33mbe820e6[m Merge pull request #4 from rt-uae-dev/codex/integrate-google-gemini-with-mohre-services
+[31m|[m [1;33m|[m[1;34m\[m [35m\[m  
+[31m|[m [1;33m|[m * [35m|[m [33m3510ba7[m[33m ([m[1;31mold-origin/codex/integrate-google-gemini-with-mohre-services[m[33m)[m Expand MOHRE service list with offline fallback
+[31m|[m [1;33m|[m[31m/[m [35m/[m  
+[31m|[m[31m/[m[1;33m|[m [35m|[m   
+[31m|[m * [35m|[m   [33m8e83d7d[m Merge pull request #3 from rt-uae-dev/codex/refactor-project-for-portability
+[31m|[m [1;35m|[m[1;36m\[m [35m\[m  
+[31m|[m [1;35m|[m * [35m\[m   [33mcd683ba[m[33m ([m[1;31mold-origin/codex/refactor-project-for-portability[m[33m)[m Merge branch 'main' into codex/refactor-project-for-portability
+[31m|[m [1;35m|[m [31m|[m[1;35m\[m [35m\[m  
+[31m|[m [1;35m|[m [31m|[m[1;35m/[m [35m/[m  
+[31m|[m [1;35m|[m[1;35m/[m[31m|[m [35m|[m   
+[31m|[m * [31m|[m [35m|[m   [33m43059fb[m Merge pull request #2 from rt-uae-dev/codex/translate-father-and-mother-names-to-arabic
+[31m|[m [33m|[m[34m\[m [31m\[m [35m\[m  
+[31m|[m [33m|[m * [31m|[m [35m|[m [33m4a9857c[m[33m ([m[1;31mold-origin/codex/translate-father-and-mother-names-to-arabic[m[33m)[m Add Arabic translation fields for parental names
+[31m|[m [33m|[m[31m/[m [31m/[m [35m/[m  
+[31m|[m[31m/[m[33m|[m [31m|[m [35m|[m   
+[31m|[m * [31m|[m [35m|[m [33m450d014[m Merge pull request #1 from rt-uae-dev/codex/create-requirements.txt-for-dependencies
+[31m|[m[31m/[m[36m|[m [31m|[m [35m|[m 
+[31m|[m * [31m|[m [35m|[m [33mc6bb253[m[33m ([m[1;31mold-origin/codex/create-requirements.txt-for-dependencies[m[33m)[m Remove OpenAI dependency
+[31m|[m[31m/[m [31m/[m [35m/[m  
+[31m|[m * [35m/[m [33m2123aeb[m Remove GPT dependencies and references
+[31m|[m[31m/[m [35m/[m  
+[31m|[m * [33mbeb4062[m Include service needed in final details
+[31m|[m[31m/[m  
+* [33mcd90100[m Initial upload of full MOHRE project
