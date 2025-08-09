@@ -11,11 +11,13 @@ from structure_with_gemini import structure_with_gemini
 from output_saving_utils import save_outputs, log_processed_file
 from image_utils import compress_image_to_jpg
 from parse_salary_docx import parse_salary_docx
+from parse_salary_email import parse_salary_email, merge_salary_data
 
-def parse_salary_documents(subject_path: str) -> Dict[str, Any]:
-    """Parse salary DOCX files."""
-    print("💰 Parsing salary DOCX files...")
-    salary_data = {}
+def parse_salary_documents(subject_path: str, email_text: str = "") -> Dict[str, Any]:
+    """Parse salary DOCX files and email text."""
+    print("💰 Parsing salary information from documents and email...")
+    docx_salary_data = {}
+    email_salary_data = {}
 
     # Look for salary DOCX files
     docx_files = [f for f in os.listdir(subject_path) if f.lower().endswith('.docx') and 'salary' in f.lower()]
@@ -25,24 +27,46 @@ def parse_salary_documents(subject_path: str) -> Dict[str, Any]:
             docx_path = os.path.join(subject_path, docx_file)
             parsed_salary = parse_salary_docx(docx_path)
             if parsed_salary:
-                salary_data.update(parsed_salary)
-                print(f"✅ Parsed salary from: {docx_file}")
-                
-                # Display salary breakdown
-                print("💰 Salary Breakdown:")
-                for key, value in parsed_salary.items():
-                    if key == "Employment_Terms":
-                        print(f"   📋 Employment Terms:")
-                        for term_key, term_value in value.items():
-                            print(f"      • {term_key.replace('_', ' ').title()}: {term_value}")
+                docx_salary_data.update(parsed_salary)
+                print(f"✅ Parsed salary from DOCX: {docx_file}")
+        except Exception as e:
+            print(f"❌ Error parsing salary from {docx_file}: {e}")
+    
+    # Parse salary from email text
+    if email_text and email_text.strip():
+        try:
+            email_salary_data = parse_salary_email(email_text)
+            if email_salary_data:
+                print("✅ Parsed salary from email text")
+                print("📧 Email Salary Details:")
+                for key, value in email_salary_data.items():
+                    if isinstance(value, dict):
+                        print(f"   📋 {key.replace('_', ' ').title()}:")
+                        for sub_key, sub_value in value.items():
+                            print(f"      • {sub_key}: {sub_value}")
                     else:
                         print(f"   • {key.replace('_', ' ').title()}: {value}")
             else:
-                print(f"⚠️ No salary data found in: {docx_file}")
+                print("⚠️ No salary data found in email text")
         except Exception as e:
-            print(f"❌ Error parsing salary from {docx_file}: {e}")
+            print(f"❌ Error parsing salary from email text: {e}")
+    
+    # Merge salary data (DOCX takes priority)
+    final_salary_data = merge_salary_data(docx_salary_data, email_salary_data)
+    
+    if final_salary_data:
+        print("💰 Final Salary Summary:")
+        for key, value in final_salary_data.items():
+            if isinstance(value, dict):
+                print(f"   📋 {key.replace('_', ' ').title()}:")
+                for sub_key, sub_value in value.items():
+                    print(f"      • {sub_key}: {sub_value}")
+            else:
+                print(f"   • {key.replace('_', ' ').title()}: {value}")
+    else:
+        print("⚠️ No salary information found in documents or email")
 
-    return salary_data
+    return final_salary_data
 
 def collect_ocr_data(processed_images: List[Dict[str, Any]]) -> tuple[str, str, str, str, str, str, Dict[str, Any]]:
     """Collect OCR data by document type."""

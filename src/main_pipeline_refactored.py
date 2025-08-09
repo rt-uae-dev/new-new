@@ -80,7 +80,7 @@ def process_single_folder(subject_path: str, subject_folder: str, download_dir: 
             return True
         
         # === STEP 3: Parse salary documents ===
-        salary_data = parse_salary_documents(subject_path)
+        salary_data = parse_salary_documents(subject_path, email_text)
         
         # === STEP 4: Classify images ===
         classified_images = classify_images(all_image_paths)

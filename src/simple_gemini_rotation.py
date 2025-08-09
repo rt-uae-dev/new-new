@@ -123,13 +123,13 @@ def ask_gemini_if_needs_rotation(image_path: str, is_passport_page: bool = False
         # Create the simple prompt with better instructions for all document types
         if is_passport_page:
             prompt = """
-            Look at this passport page.
+            Is this passport oriented properly? If not, how many degrees clockwise do I need to turn it?
             
-            Check BOTH the personal photo AND the text next to the photo.
-            
-            Is the passport upright? (person in photo standing normally AND text next to the photo readable from top to bottom)
-            
-            Just answer: yes or no
+            Answer with just a number:
+            - 0 if it's already correct
+            - 90 if you need to turn it 90 degrees clockwise
+            - 180 if you need to turn it 180 degrees (upside down)
+            - 270 if you need to turn it 270 degrees clockwise
             """
         else:
             prompt = """
@@ -151,17 +151,19 @@ def ask_gemini_if_needs_rotation(image_path: str, is_passport_page: bool = False
         response_text = response.text.strip().lower()
         
         if is_passport_page:
-            # For passports, check if both photo and text are upright
-            if "yes" in response_text:
-                # Gemini says passport is upright, but we know it can be wrong
-                # Apply 180° rotation as fallback for passport pages
-                rotation_angle = 180
-                rotation_needed = True
-                reason = "Fallback: Applying 180° rotation to passport (Gemini may miss upside-down photos)"
+            # For passports, extract the rotation angle directly from the response
+            try:
+                rotation_angle = int(response_text.strip())
+                if rotation_angle not in [0, 90, 180, 270]:
+                    rotation_angle = 0  # Default to no rotation if invalid response
+            except ValueError:
+                rotation_angle = 0  # Default to no rotation if can't parse
+            
+            rotation_needed = rotation_angle != 0
+            if rotation_angle == 0:
+                reason = "Gemini 2.5 Flash detected: Passport is correctly oriented"
             else:
-                rotation_angle = 180
-                rotation_needed = True
-                reason = "Gemini 2.5 Flash detected: Passport needs 180° rotation (photo or text not upright)"
+                reason = f"Gemini 2.5 Flash detected: Passport needs {rotation_angle}° clockwise rotation"
         else:
             # For other documents, try to extract angle (fallback to text-based detection)
             try:

@@ -73,28 +73,12 @@ def rotate_image_if_needed(image_path: str, angle_data: list, doc_class: str) ->
         print(f"⚠️ Error loading image: {e}")
         return image_path
 
-    # For passports, also check orientation even if angle data is insufficient
+    # For passports, skip automatic portrait-to-landscape rotation
+    # Many passports are correctly oriented in portrait format
     if doc_class in ["passport_1", "passport_2"]:
-        orientation_check = detect_text_orientation(image_path)
-        if not orientation_check.get("orientation_correct", True):
-            print(f"🔍 Orientation check suggests rotation needed for {doc_class}")
-            # Force a 90-degree rotation for portrait passports
-            h, w = image.shape[:2]
-            if h > w:  # Portrait orientation
-                print(f"↻ Rotating portrait passport to landscape orientation")
-                center = (w // 2, h // 2)
-                M = cv2.getRotationMatrix2D(center, 90, 1.0)
-                rotated = cv2.warpAffine(image, M, (h, w), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
-                
-                rotated_path = os.path.splitext(image_path)[0] + "_rotated_90deg.jpg"
-                success = cv2.imwrite(rotated_path, rotated)
-                
-                if success:
-                    print(f"✅ Portrait passport rotated to landscape: {rotated_path}")
-                    return rotated_path
-                else:
-                    print(f"⚠️ Failed to save rotated passport image")
-                    return image_path
+        print(f"🔍 Passport detected - skipping automatic portrait-to-landscape rotation")
+        print(f"   (Passport rotation should be handled by Gemini-based orientation detection)")
+        # Skip the old logic that forced portrait passports to landscape
     
     # Only rotate if we have very clear angle data (at least 4 points for bounding box)
     if not angle_data or len(angle_data) < 4:
